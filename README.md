@@ -13,4 +13,38 @@
 
 ## Secure Code Review 
 
-- <h3><a href ="Notes/Secure Code Review/web-application.md"> Web Application </a></h3>
+- <h3><a href ="Notes/Secure Code Review/web-application.md">Web Application</a></h3>
+- <h3><a href ="Notes/Secure Code Review/malware-reversing.md"> Malware & Reversing</a></h3>
+- <h3><a href ="Notes/Secure Code Review/exploits.md">Exploits</a></h3>
+- <h3><a href ="Notes/Secure Code Review/security-testing.md">Security Testing</a></h3>
+- <h3><a href ="Notes/Secure Code Review/coding-algorithms.md">Coding & Algorithms</a></h3>
+
+<hr>
+
+## Scripting and Automation 
+
+- <h3><a href ="Notes/Scripting and Automation/security-functions.md"></a> Script Automation for Security Functions</h3>
+
+<hr>
+
+## Threat Modeling 
+
+- <h3><a href ="Notes/Threat Modeling/threat-modeling.md">Threat Modeling</a></h3>
+- <h3><a href ="Notes/Threat Modeling/attack-structure.md">Attack Structure</a></h3>
+
+<hr>
+
+## Web Vulnerabilites and Mitigations 
+
+- <h3><a href ="Notes/Threat Modeling/common-vulnerabilites.md">Web Vulnerabilies(Detection, Exploitation, Mitigation)</a></h3>
+
+<hr>
+
+## Cryptography
+
+- <h3><a href ="Notes/Threat Modeling/cryptography.md">Cryptography Concepts</a></h3>
+- <h3><a href ="Notes/Threat Modeling/scenarios.md">Scenarios to use</a></h3>
+- <h3><a href ="Notes/Threat Modeling/server-client-side.md">Server & Client side</a></h3>
+
+
+
