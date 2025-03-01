@@ -23,7 +23,7 @@
 
 ## Scripting and Automation 
 
-- <h3><a href ="Notes/Scripting and Automation/security-functions.md"></a> Script Automation for Security Functions</h3>
+- <h3><a href ="Notes/Scripting and Automation/security-functions.md"></a>Script Automation for Security Functions</h3>
 
 <hr>
 
@@ -36,15 +36,15 @@
 
 ## Web Vulnerabilites and Mitigations 
 
-- <h3><a href ="Notes/Threat Modeling/common-vulnerabilites.md">Web Vulnerabilies(Detection, Exploitation, Mitigation)</a></h3>
+- <h3><a href ="Notes/Web Vulnerabilites and Mitigations/common-vulnerabilites.md">Web Vulnerabilies (Detection, Exploitation, Mitigation)</a></h3>
 
 <hr>
 
 ## Cryptography
 
-- <h3><a href ="Notes/Threat Modeling/cryptography.md">Cryptography Concepts</a></h3>
-- <h3><a href ="Notes/Threat Modeling/scenarios.md">Scenarios to use</a></h3>
-- <h3><a href ="Notes/Threat Modeling/server-client-side.md">Server & Client side</a></h3>
+- <h3><a href ="Notes/Cryptography/cryptography.md">Cryptography Concepts</a></h3>
+- <h3><a href ="Notes/Cryptography/scenarios.md">Scenarios to use</a></h3>
+- <h3><a href ="Notes/Cryptography/server-client-side.md">Server & Client side</a></h3>
 
 
 
