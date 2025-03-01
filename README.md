@@ -23,7 +23,7 @@
 
 ## Scripting and Automation 
 
-- <h3><a href ="Notes/Scripting and Automation/security-functions.md"></a>Script Automation for Security Functions</h3>
+- <h3><a href ="Notes/Scripting and Automation/security-functions.md"> Script Automation for Security Functions</a></h3>
 
 <hr>
 
