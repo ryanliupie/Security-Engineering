@@ -3,7 +3,7 @@
 <hr>
 
 <p>
-    Here are some notes I’ve been compiling as I explore the vast field of cybersecurity.
+    This repository contains notes I’ve compiled while exploring cybersecurity. Some insights are derived from Grace Nolan's repository to support self-study, along with key learnings from my professors and various online resources. 
 </p>
 
 <hr>
