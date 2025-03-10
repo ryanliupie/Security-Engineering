@@ -9,7 +9,7 @@
 <hr>
 
 ## Notes 📖
-- <h3><a href="security_notes/secure_code_review.md.">Secure Code Review</a><h3>
+- <h3><a href="security_notes/secure_code_review.md">Secure Code Review</a><h3>
 - <h3><a href="scripting_and_automation.md">Scripting & Automation</a><h3>
 - <h3><a href="threat_modeling.md">Threat Modeling</a><h3>
 - <h3><a href="security_testing.md">Security Testing </a><h3>
