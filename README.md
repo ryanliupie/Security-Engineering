@@ -10,17 +10,17 @@
 
 ## Notes 📖
 - <h3><a href="security_notes/secure_code_review.md">Secure Code Review</a><h3>
-- <h3><a href="scripting_and_automation.md">Scripting & Automation</a><h3>
-- <h3><a href="threat_modeling.md">Threat Modeling</a><h3>
-- <h3><a href="security_testing.md">Security Testing </a><h3>
-- <h3><a href="web_security.md">Web Security & Vulerabilities</a><h3>
-- <h3><a href="cryptography.md">Cryptography, Authentication & Identity</a><h3>
-- <h3><a href="infrastructure_security.md">Infrastructure Security</a><h3>
-- <h3><a href="malware_and_reversing.md">Malware & Reversing</a><h3>
-- <h3><a href="offensive_security.md">Exploitation & Offensive Security</a><h3>
-- <h3><a href="security_operations.md">Security Operations & Incident Response</a><h3>
-- <h3><a href="security_management.md">Security Hardening & Risk Mitigation</a><h3>
-- <h3><a href="coding_challenges.md">Coding & Security Themed Challenges</a><h3>
+- <h3><a href="security_notes/scripting_and_automation.md">Scripting & Automation</a><h3>
+- <h3><a href="security_notes/threat_modeling.md">Threat Modeling</a><h3>
+- <h3><a href="security_notes/security_testing.md">Security Testing </a><h3>
+- <h3><a href="security_notes/web_security.md">Web Security & Vulerabilities</a><h3>
+- <h3><a href="security_notes/cryptography.md">Cryptography, Authentication & Identity</a><h3>
+- <h3><a href="security_notes/infrastructure_security.md">Infrastructure Security</a><h3>
+- <h3><a href="security_notes/malware_and_reversing.md">Malware & Reversing</a><h3>
+- <h3><a href="security_notes/offensive_security.md">Exploitation & Offensive Security</a><h3>
+- <h3><a href="security_notes/security_operations.md">Security Operations & Incident Response</a><h3>
+- <h3><a href="security_notes/security_management.md">Security Hardening & Risk Mitigation</a><h3>
+- <h3><a href="security_notes/coding_challenges.md">Coding & Security Themed Challenges</a><h3>
 
 
 
