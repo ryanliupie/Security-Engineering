@@ -11,40 +11,21 @@
 
 <hr>
 
-## Secure Code Review 
+## 📖
+- <h3><a href="secure_code_review.md.">Secure Code Review</a><h3>
+- <h3><a href="scripting_and_automation.md">Scripting & Automation</a><h3>
+- <h3><a href="threat_modeling.md">Threat Modeling</a><h3>
+- <h3><a href="security_testing.md">Security Testing </a><h3>
+- <h3><a href="web_security.md">Web Security & Vulerabilities</a><h3>
+- <h3><a href="cryptography.md">Cryptography, Authentication & Identity</a><h3>
+- <h3><a href="infrastructure_security.md">Infrastructure Security</a><h3>
+- <h3><a href="malware_and_reversing.md">Malware & Reversing</a><h3>
+- <h3><a href="offensive_security.md">Exploitation & Offensive Security</a><h3>
+- <h3><a href="security_operations.md">Security Operations & Incident Response</a><h3>
+- <h3><a href="security_management.md">Security Hardening & Risk Mitigation</a><h3>
+- <h3><a href="coding_challenges.md">Coding & Security Themed Challenges</a><h3>
 
-- <h3><a href ="Notes/Secure Code Review/web-application.md">Web Application</a></h3>
-- <h3><a href ="Notes/Secure Code Review/malware-reversing.md"> Malware & Reversing</a></h3>
-- <h3><a href ="Notes/Secure Code Review/exploits.md">Exploits</a></h3>
-- <h3><a href ="Notes/Secure Code Review/security-testing.md">Security Testing</a></h3>
-- <h3><a href ="Notes/Secure Code Review/coding-algorithms.md">Coding & Algorithms</a></h3>
 
-<hr>
-
-## Scripting and Automation 
-
-- <h3><a href ="Notes/Scripting and Automation/security-functions.md"> Script Automation for Security Functions</a></h3>
-
-<hr>
-
-## Threat Modeling 
-
-- <h3><a href ="Notes/Threat Modeling/threat-modeling.md">Threat Modeling</a></h3>
-- <h3><a href ="Notes/Threat Modeling/attack-structure.md">Attack Structure</a></h3>
-
-<hr>
-
-## Web Vulnerabilites and Mitigations 
-
-- <h3><a href ="Notes/Web Vulnerabilites and Mitigations/common-vulnerabilites.md">Web Vulnerabilies (Detection, Exploitation, Mitigation)</a></h3>
-
-<hr>
-
-## Cryptography
-
-- <h3><a href ="Notes/Cryptography/cryptography.md">Cryptography Concepts</a></h3>
-- <h3><a href ="Notes/Cryptography/scenarios.md">Scenarios to use</a></h3>
-- <h3><a href ="Notes/Cryptography/server-client-side.md">Server & Client side</a></h3>
 
 
 
