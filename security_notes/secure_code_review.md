@@ -10,7 +10,7 @@
 
 ## Common Vulnerabilites in Code
 
-### <u>SQL Injection (SQLi):</u>
+<h3><u>SQL Injection (SQLi):</u></h3>
 
  A vulnerability that allows an attacker to manipulate SQL queries executed by a relational database. SQL databases store data in structured tables, making them easy to query using Structured Query Language (SQL). If an application fails to properly handle user input, attackers can inject malicious SQL code to gain unauthorized access, modify data, or even delete entire databases.
 
@@ -155,7 +155,6 @@ The last way, which is NOT recommended would be <b>Escaping All User Input Manua
 For instance, before we learnt that if a software developer were to use a `'` in between the `""` -> `"'"`, an attacker can end the string, or use other characters such as `--`, `#`, `/* */` to get out of the string = succesful SQLi 
 
 <hr>
-
 
 
 
