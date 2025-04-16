@@ -12,7 +12,7 @@
 
 <h3><u>SQL Injection (SQLi):</u></h3>
 
- A vulnerability that allows an attacker to manipulate SQL queries executed by a relational database. SQL databases store data in structured tables, making them easy to query using Structured Query Language (SQL). If an application fails to properly handle user input, attackers can inject malicious SQL code to gain unauthorized access, modify data, or even delete entire databases.
+A vulnerability that allows an attacker to manipulate SQL queries executed by a relational database. SQL databases store data in structured tables, making them easy to query using Structured Query Language (SQL). If an application fails to properly handle user input, attackers can inject malicious SQL code to gain unauthorized access, modify data, or even delete entire databases.
 
 A normal login query would look like this:  
 ```sql
@@ -158,7 +158,7 @@ For instance, before we learnt that if a software developer were to use a `'` in
 
 <h3>Cross-Site Scripting (XSS)</h3>
 
-These are types of attacks where malicous scripts usually in the form of Javascript are injected into a web application by a innocent end user. This happens because of insecure handling of user input such as the "search bar". There are two types of attacks: 
+These are types of attacks where malicous scripts usually in the form of Javascript are injected into a web application by a innocent end user. This happens because of insecure handling of user input such as the "search bar". There are three types of attacks: 
 
 - <b>Non-persistent (reflected):</b> Attackers would send a user a link by utilizing impersonification, phishing, smishing, or any way to gain trust of the user to click the link. This link would contain malicious Javascript, where once the user performs that HTTP request to the server, the server reflects that HTTP request as a response.  
   
@@ -187,3 +187,24 @@ These are types of attacks where malicous scripts usually in the form of Javascr
     A software developer must remediate this or else it is stuck there and is especially dangerous if an admin view its. This is because the attacker can perform actions as the admin and escalate privileges. 
 
 - <b>DOM (Document Object Model) Based XSS:</b> For the other attacks mentions before, the malicious payload is either sent to the server (reflected) or stays in the server (stored). In this case, the malcious payload never reaches the server. This means the server can't detect it, and can't sanitize or filter the user input. The client-side vulnerable JavaScript code would get exploited. Just like reflected XSS, the user must open a specially crafted URl for this attack to occur. 
+
+To defend against a XSS attack, there is not one way to solve it, rather a combination of techniques. Luckily, popular frameworks like React steer Software developers towards good security coding practices to help reduce XSS attacks, but not entirely. There are a couple of techniques to defend against this: 
+
+- <b>Output Encoding:</b> This protects against Stored and Reflected attacks where the text inserted by the user should not be interpreted as executable code, rather the actual text that the user has typed in. 
+
+  "HTML Contexts" --> refers to inserting a variable between two basic HTML tags like a `<div>` or `<b>`. In this case, the front end HTML trusts the user input and directly asks the backend for the results: 
+
+  ``` html
+  <!-- Vulnerable Code -->
+  <p>Results for: <%= SearchQuery %><p> <!-- This is trying to get the results from the backend. This is bad practice as the attacker can control this because we have not escaped it -->
+
+  <!-- THE ATTACK! -->
+  <script>alert('XSS')</script> <!--injected into search query and asks DB-->
+
+  <!-- Rendered HTML Results Page -->
+  <p>Results for: <script>alert('XSS')</script></p> <!--browser then runs the attack-->
+
+  <!----------------------------------------------------------------------------------------------------------->
+
+
+  ```
