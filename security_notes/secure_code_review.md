@@ -188,6 +188,8 @@ These are types of attacks where malicous scripts usually in the form of Javascr
 
 - <b>DOM (Document Object Model) Based XSS:</b> For the other attacks mentions before, the malicious payload is either sent to the server (reflected) or stays in the server (stored). In this case, the malcious payload never reaches the server. This means the server can't detect it, and can't sanitize or filter the user input. The client-side vulnerable JavaScript code would get exploited. Just like reflected XSS, the user must open a specially crafted URl for this attack to occur. 
 
+<hr>
+
 To defend against a XSS attack, there is not one way to solve it, rather a combination of techniques. Luckily, popular frameworks like React steer Software developers towards good security coding practices to help reduce XSS attacks, but not entirely. There are a couple of techniques to defend against this: 
 
 - <b>Output Encoding:</b> This protects against Stored and Reflected attacks where the text inserted by the user should not be interpreted as executable code, rather the actual text that the user has typed in. 
