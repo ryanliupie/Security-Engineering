@@ -11,7 +11,7 @@ Believe it or not, it's something that humans naturally do everyday. For example
 
 <hr>
 
-### Threat Modeling Framework
+###  Threat Modeling Framework
 
 This framework helps us organize threat modeling which consists of the following:
 
@@ -25,7 +25,7 @@ This framework helps us organize threat modeling which consists of the following
 
 <hr>
 
-## Implementation with SDLC
+###  Implementation with SDLC
 
 SDLC stands for "Software Development Lifecycle" which explain the steps how software is made. There are different types of ways to create software such as waterfall, agile, iterative etc.. but Swe will just cover the steps and how security is involved. 
 
