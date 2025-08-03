@@ -11,25 +11,25 @@ Believe it or not, it's something that humans naturally do everyday. For example
 
 <hr>
 
-###  Threat Modeling Framework
+###  The Four Question Framework
 
-This framework helps us organize threat modeling which consists of the following:
+These questions help guide us when we threat model: 
 
-- <b>Assess Scope:</b> What are working on? It could be a large system, or small system. We have to understand the assets, value of them etc..
+- <b>What are we building?:</b> What are working on? It could be a large system, or small system. We have to understand the assets, value of them etc..
 
-- <b>Identify what can go wrong:</b> What are the threats to the system? How much money would a company lose if a threat exploited "x"? This is where you brainstorm everything that can go wrong. 
+- <b>What can go wrong?:</b> What are the threats to the system? How much money would a company lose if a threat exploited "x"? This is where you brainstorm everything that can go wrong. 
 
-- <b>Identify countermeasures:</b> Once these threats are identifed, what are you going to do about them? This may involve approaching approaches to risk management such as accepting the risk, transfer or mitigate it; if this system participates is high risk activites, it may be time to avoid them. 
+- <b>What are we going to do?:</b> Once these threats are identifed, what are you going to do about them? This may involve approaching approaches to risk management such as accepting the risk, transfer or mitigate it; if this system participates is high risk activites, it may be time to avoid them. 
 
-- <b>Assessing work:</b> Did you do a good job? What went well/wrong? What can you do to improve next time? It is important to assess your solutions because if this happens again, you know what to do and how to make them more efficient and stronger. 
+- <b>Did we do a good job?:</b> What went well/wrong? What can you do to improve next time? It is important to assess your solutions because if this happens again, you know what to do and how to make them more efficient and stronger. 
 
 <hr>
 
 ###  Implementation with SDLC
 
-SDLC stands for "Software Development Lifecycle" which explain the steps how software is made. There are different types of ways to create software such as waterfall, agile, iterative etc.. but Swe will just cover the steps and how security is involved. 
+SDLC stands for "Software Development Lifecycle" which explain the steps how software is made. There are different types of ways to create software such as waterfall, agile, iterative etc.. but this will just cover the steps and how security is involved. 
 
-- <b>Planning:</b> This involves gathering information and tools we will need. For example, defining scope, setting goals, SDEs, cost estimation and allocation, customer input, internal/external experts, managers overseeing project, etc.. 
+- <b>Planning:</b> This involves gathering information and tools we will need. For example, defining scope, setting goals, software developers, cost estimation and allocation, customer input, internal/external experts, managers overseeing project, etc.. 
 
 - <b>Requirements & Analysis:</b> This is similar to step one, but this dig a bit deeper into the granular details where every single person understands. This can include, the hardware, OS, containers, programming, security, and understanding what the customer exactly wants. 
 
@@ -49,20 +49,36 @@ SDLC stands for "Software Development Lifecycle" which explain the steps how sof
 
     - 🚨*CICD Automated Security Checks*🚨 - Within the CICD pipline right before and during code deployment, some security checks are performed. This includes the use of SAST tools (SonarQuebe, Semgrep), DAST tools (OWASP ZAP), and SCA tools --> Software Composition Analysis (Synk, OWASP Dependency-Check). 
 
-    - Detect leaked secrets with tools such as Gitleaks, TruffleHog, or GitHub Secret Scanning. 
+        - Detect leaked secrets with tools such as Gitleaks, TruffleHog, or GitHub Secret Scanning. 
 
-    - If deployement is on Docker/Kubernetes, you can use tools such as Aqua, Anchore, or Clair to scan container images for OS/package vulnerablites, and enforce policies such as no root user in containers. 
+        - If deployement is on Docker/Kubernetes, you can use tools such as Aqua, Anchore, or Clair to scan container images for OS/package vulnerablites, and enforce policies such as no root user in containers. 
 
-    - Scanning (IaC) with tools such as Checkov, Terrascan, or AWS Config to make sure there are no misconfigurations. 
+        - Scanning (IaC) with tools such as Checkov, Terrascan, or AWS Config to make sure there are no misconfigurations. 
 
-    - Implement "fail deploy" with security polices/gates if certain criteria is not met such as compliance violation, secrets found, or a certain number of vulnerabilites and its severity exceed a certain amount. 
+        - Implement "fail deploy" with security polices/gates if certain criteria is not met such as compliance violation, secrets found, or a certain number of vulnerabilites and its severity exceed a certain amount. 
 
-    - Signed Artifacts: The process of digitally signing code, binaries, containers, and other forms of digital products to ensure its integrity and authentcity. You can use tools such as Cosign or Sigstore to prevent tampering. 
+        - Signed Artifacts: The process of digitally signing code, binaries, containers, and other forms of digital products to ensure its integrity and authentcity. You can use tools such as Cosign or Sigstore to prevent tampering. 
 
 - <b>Maintenance:</b> In this phase, this is where teams fix bugs, resolve customer complaints, and manage change management of software. Also, teams monitor system performance, security issues, and user experience to figure out ways to improve. 
 
     - 🚨*Disclose/Bug Bounty*🚨 - If people such as security researchers, customers, or internal engineers find vulnerabilites, they can provide responsible ways of reporting it to the company. Some companies will pay people if they find something where platforms HackerOne help manage these programs. 
     
+<hr>
 
+In the SDLC process, we want to focus on Threat Modeling. From the principle `shift left`, what are some of the benefits?
 
+- Early risk identification
+
+- Cost effective security (it is cheaper to mitigate threats early on rather than after the software has been developed) Downn below is an study from IBM that showecases that the cost of fixing security defects is much cheaper early on the SDLC process. 
+<img src="/security_notes/ibm_sdlc_security_price.JPG" width="300" alt="ibm-study-security-implementation-early-on-in-sdlc">
+
+- Efficent resource allocation (organizations can focus on implementing security early since it will be easier to architect during the design phase). 
+
+- Security By Design (ensures security considerations are engrained into the development from the start, instead of security being an after thought). 
+
+- Collaboration & Communication (implementing security requires communication which improves teamwork). 
+
+- Compliance & regulatory requirements (implementing security helps meet compliance and regulations such as PIPEDA, GDPR, CCPA)
+
+- Agile & DevOps Integration (security during the implementation of software, helps limit the amount of insecurity). 
 
