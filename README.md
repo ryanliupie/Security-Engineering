@@ -6,7 +6,7 @@
 <hr>
 
 ## Notes 📖
-- <h3><a href="security_notes/secure_code_review.md">Secure Code Review</a><h3>
+- <h3><a href="security_notes/secure_code_review/secure_code_definition.md">Secure Code Review</a><h3>
 - <h3><a href="security_notes/scripting_and_automation.md">Scripting & Automation</a><h3>
 - <h3><a href="security_notes/threat_modeling.md">Threat Modeling</a><h3>
 - <h3><a href="security_notes/cryptography.md">Cryptography, Authentication & Identity</a><h3>
