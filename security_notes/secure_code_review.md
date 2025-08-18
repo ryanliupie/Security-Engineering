@@ -190,23 +190,24 @@ These are types of attacks where malicous scripts usually in the form of Javascr
 
 <hr>
 
-To defend against a XSS attack, there is not one way to solve it, rather a combination of techniques. Luckily, popular frameworks like React steer Software developers towards good security coding practices to help reduce XSS attacks, but not entirely. There are a couple of techniques to defend against this: 
+For a XSS to be successful, an attacker just needs to insert and execute malicious content in a webpage, which is why all <b>Variables</b> need to be protected. To do so, we can make sure that they are <b>Escaped</b> or <b>Sanitized</b> which is known as <b>Perfect Injection Resistance</b>. For instance, escaping characters such as `<, >, &, ", '` so the input is not interpreted as executable code or Sanitization which is removing or altering unwanted input so that only 
+"safe" content remains such as sanitizing `<b>Hello</b> <script>alert(1)</script>` to only this `<b>Hello</b>`. 
+
+To defend against a XSS attack, there is not one way to solve it, rather a combination of techniques. Luckily, coding frameworks like steer Software developers towards good security coding practices to help reduce XSS attacks, however, security gaps still exist in them. There are a couple of techniques to defend against this: 
 
 - <b>Output Encoding:</b> This protects against Stored and Reflected attacks where the text inserted by the user should not be interpreted as executable code, rather the actual text that the user has typed in. 
 
-  "HTML Contexts" --> refers to inserting a variable between two basic HTML tags like a `<div>` or `<b>`. In this case, the front end HTML trusts the user input and directly asks the backend for the results: 
+  - <b>"HTML Contexts"</b> --> refers to inserting a variable between two basic HTML tags like a `<div>` or `<b>`. In this case, the front end HTML trusts the user input and directly asks the backend for the results. It is important to use `'` and `""` to surround variables which makes it difficult to change the context of the variable. 
 
-  ``` html
-  <!-- Vulnerable Code -->
-  <p>Results for: <%= SearchQuery %><p> <!-- This is trying to get the results from the backend. This is bad practice as the attacker can control this because we have not escaped it -->
+    ``` html
+    <img src=<%= photoUrl % alt="Profile Picture">   <!-- No quotes in between "photoUrl" insecure-->
 
-  <!-- THE ATTACK! -->
-  <script>alert('XSS')</script> <!--injected into search query and asks DB-->
+    <!-- THE ATTACK! -->
+    <script>alert('XSS')</script> <!-- since the above code has not been escaped, the browser is the one that executes the injected code since it interprets it as code. 
 
-  <!-- Rendered HTML Results Page -->
-  <p>Results for: <script>alert('XSS')</script></p> <!--browser then runs the attack-->
+    <!-- Rendered HTML Results Page -->
+    <p>Results for: <script>alert('XSS')</script></p> <!-- -->
 
-  <!----------------------------------------------------------------------------------------------------------->
+    <!--------------------> 
+    <<img src="<%= photoUrl %>" alt="Profile Picture"> <!--Secure since "photourl" has quotes, but rmemember that we need additional security measures on top of this--> 
 
-
-  ```
