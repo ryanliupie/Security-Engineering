@@ -1,4 +1,4 @@
-<h3>Cross-Site Scripting (XSS)</h3>
+<h3><u>Cross-Site Scripting (XSS)</u></h3>
 
 These are types of attacks where malicous scripts usually in the form of Javascript are injected into a web application by a innocent end user. This happens because of insecure handling of user input such as the "search bar". There are three types of attacks: 
 
