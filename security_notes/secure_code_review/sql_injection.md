@@ -1,6 +1,6 @@
 <h3><u>SQL Injection (SQLi):</u></h3>
 
-A vulnerability that allows an attacker to manipulate SQL queries executed by a relational database. SQL databases store data in structured tables, making them easy to query using Structured Query Language (SQL). If an application fails to properly handle user input, attackers can inject malicious SQL code to gain unauthorized access, modify data, or even delete entire databases.
+A vulnerability that allows an attacker to manipulate queries that an application makes to a relational database. SQL databases store data in structured tables, making them easy to query using Structured Query Language (SQL). If an application fails to properly handle user input, attackers can inject malicious SQL code to gain unauthorized access, modify data, or even delete entire databases.
 
 A normal login query would look like this:  
 ```sql
@@ -17,7 +17,7 @@ SELECT * FROM users WHERE username = '' OR 1=1 --' AND password = '';
 
 In this case, we are asking if there are any users with an empty string, hence ' '. The important manipulation part is the `OR 1=1`. This is saying "Is there a user with an empty string or does 1 equal the value of 1?. Well, that math does make sense, so I will let you in". Now the `--' AND password = ''` is commented out because of the `--` which is saying "We don't need the password anymore". 
 
-Mind you, this is not neccesarily granting you access to the website via UI such as logging into your banking app and seeing the purchases you have made. It is granting access to the backend database that powers the application. 
+Mind you, this is not necessarily granting you access to the website via UI such as logging into your banking app and seeing the purchases you have made. It is granting access to the backend database that powers the application. 
 
 Lets take a look at how this would look in Java. Down below, there is some code from OWASP where JDBC (Java Database Connectivity) is communicating with a database. 
 
