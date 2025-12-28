@@ -72,11 +72,29 @@ In the SDLC process, we want to focus on Threat Modeling. From the principle `sh
 - Cost effective security (it is cheaper to mitigate threats early on rather than after the software has been developed) Downn below is an study from IBM that showecases that the cost of fixing security defects is much cheaper early on the SDLC process. 
 <img src="/security_notes/ibm_sdlc_security_price.JPG" width="300" alt="ibm-study-security-implementation-early-on-in-sdlc">
 
-- Efficent resource allocation (organizations can focus on implementing security early since it will be easier to architect during the design phase). 
+- Efficient resource allocation (organizations can focus on implementing security early since it will be easier to architect during the design phase). 
 
 - Security By Design (ensures security considerations are engrained into the development from the start, instead of security being an after thought). 
 
 - Compliance & regulatory requirements (implementing security helps meet compliance and regulations such as PIPEDA, GDPR, CCPA)
 
 - Agile & DevOps Integration (security during the implementation of software, helps limit the amount of insecurity). 
+
+
+## Threat modeling a web application 
+
+Let's use the four question framework to conduct this threat model: 
+
+<b>What are we building?</b>
+
+- We are building a web application that is a social medium platform that lets users interact with each other. 
+
+    - <b>Components</b>
+        
+        - Web Browser (internet) <--> Web Server (DMZ) <--> App Server (Internal Corporate) <--> Database (Internal Corporate)
+
+            - We can mark the trust boundaries (different levels of trust depending on the region or area that the system operates in.) 
+            - 1. Web Browser 
+            - 2. Traffic coming in to web server
+            - 3. Web Server
 
