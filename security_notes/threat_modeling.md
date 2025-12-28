@@ -76,8 +76,6 @@ In the SDLC process, we want to focus on Threat Modeling. From the principle `sh
 
 - Security By Design (ensures security considerations are engrained into the development from the start, instead of security being an after thought). 
 
-- Collaboration & Communication (implementing security requires communication which improves teamwork). 
-
 - Compliance & regulatory requirements (implementing security helps meet compliance and regulations such as PIPEDA, GDPR, CCPA)
 
 - Agile & DevOps Integration (security during the implementation of software, helps limit the amount of insecurity). 

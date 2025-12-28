@@ -1,6 +1,6 @@
 <h3><u>Cross Site Request Forgery (CSRF):</u></h3>
 
-This is a type of attack that forces a user on a web application to do unwanted tasks while they are authenticated. With the help of social engineering, they can trick a user to execute actions on the web browser such tranferring funds, chaning their email address, and much more, especially if the user is the admin, the threat actor can compromise the entire web application. 
+This is a type of attack that forces a user on a web application to do unwanted tasks while they are authenticated. With the help of social engineering, they can trick a user to execute actions on the web browser such transferring funds, chaining their email address, and much more, especially if the user is the admin, the threat actor can compromise the entire web application. 
 
 When a user is logged into a web browser, a session is created and the server assigns it unique ID. This ID is stored on the user's device as a session. It helps hold or remember information about that user's sessions next time they visit. 
 
@@ -12,6 +12,7 @@ Since the user is already authenticated, the web browser cannot tell what reques
 4. This action was allowed since TD bank received this request with the valid login and session cookies. 
 
 <hr>
+
 
 
 
