@@ -14,12 +14,13 @@ It holds configuration information that Windows actively references to operate t
 
 ### What are Registry Hives?  
 
-A <b>Registry Hive</b> is a top-level folder that contain crucial configuration data, user profiles, and system settings. They form the backbone of the Windows Registry database. Everything under them are <b>Subkeys</b>, and under the Subkeys, there are <b>Values</b> that contain the actual data. There are 5 main registry hives that include: 
+A <b>Registry Hive</b> is a top-level folder that contain crucial configuration data, user profiles, and system settings. They form the backbone of the Windows Registry database. Everything under them are <b>Subkeys</b>, and under the Subkeys, there are <b>Values</b> that contain the actual data. There are 5 root registry hives that include: 
 
 <img src="../../../images/hives.png" width="250px" alt="windows_hives">
 
-
 These can be found in the <b>Registry Editor</b> or the <b>Regedit</b> application in Windows. 
+
+
 
 
 - ### 1. HKEY_CURRENT_USER (HKCU)
@@ -42,5 +43,20 @@ These can be found in the <b>Registry Editor</b> or the <b>Regedit</b> applicati
 
 - ### 2. HKEY_LOCAL_MACHINE (HKLM)
 
-    This registry stores system related/configuration settings for a particular computer which affects all the users. 
+    This registry stores system related/configuration settings for a particular computer which affects all the users. Whenever we forensicate a Windows system, there are VERY important hive files we want to look at in HKLM which are: 
+
+    - `SAM` → This is the <b>Security Accounts Manager</b> database. It starts running in the background as soon as Windows boots up. It contains information about:
+
+        - <b>Local username/account IDs</b> 
+        - <b>Password Hashes</b>
+        - <b>Account properties</b>
+    
+        It is mainly meant for authenticating local users in which it is the responsibility of <b>LSA (Local Security Authority)</b> to verify the user's login by matching passwords maintained in SAM. The database stores the password hashes using the <b>NTLM</b> format which is based on the <b>MD4</b> algorithm. Moreover, the NTLM hash is 16 bytes (128 bits) and is produced by hashing the password (encoded in UTF-16 Little Endian) using that MD4 algorithm.
+
+        It is vulnerable and attackers can exploit it, but I will add on later ⚠️ "ADD LATER". 
+
+
+    - `SECURITY` →
+    - `SOFTWARE` → 
+    - `SYSTEM` →
 
