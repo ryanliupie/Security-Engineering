@@ -20,6 +20,7 @@ A <b>Registry Hive</b> is a top-level folder that contain crucial configuration 
 
 These can be found in the <b>Registry Editor</b> or the <b>Regedit</b> application in Windows. 
 
+On Windows, we can also navigate to `%SystemRoot%\System32\config\`. It could be like `C:\Windows\System32\config` for example. 
 
 
 
@@ -37,10 +38,6 @@ These can be found in the <b>Registry Editor</b> or the <b>Regedit</b> applicati
     
     When we talk about <b>NTUSER.DAT</b>, we are talking about parsing a file on a <b>dead system</b>. A dead system means the machine is powered off and you are analyzing a disk image/copied filed offline. In this case, it would be NTUSER.DAT. 
 
-    
-
-
-
 - ### 2. HKEY_LOCAL_MACHINE (HKLM)
 
     This registry stores system related/configuration settings for a particular computer which affects all the users. Whenever we forensicate a Windows system, there are VERY important hive files we want to look at in HKLM which are: 
@@ -56,7 +53,7 @@ These can be found in the <b>Registry Editor</b> or the <b>Regedit</b> applicati
         It is vulnerable and attackers can exploit it, but I will add on later ⚠️ "ADD LATER". 
 
 
-    - `SECURITY` →
-    - `SOFTWARE` → 
-    - `SYSTEM` →
+    - `SECURITY` → This stores local security policies, user rights assignments, and Access Control Lists. Attackers often target this hive file to dump credentials or to understand security configurations. 
+    - `SOFTWARE` → This contains information regarding configuration settings and data for installed application, services, and different windows components that apply globally to the machine. 
+    - `SYSTEM` → This contains critical boot configuration, driver and system settings. 
 
