@@ -7,6 +7,7 @@
         "HKCU",
         "HKLM",
         "NTLM",
-        "NTUSER"
+        "NTUSER",
+        "UEFI"
     ]
 }
