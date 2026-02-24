@@ -12,7 +12,7 @@ These are artifacts that show a program or process was indeed ran by the user. T
 
 - <b>LNK files</b> - These are shortcut (`.lnk`) files which are created by the Windows operating system whenever a user executes a file. It contains information suc has the path to the file and the timestamp of execution. 
 
-![alt text](image.png)
+<img src="../../../images/lnk.png" width="300px" alt="lnk artifact file">
 
 - <b>Prefetch files</b> - This is another Windows artifact which are system files (`.pf`) typically located in `C:\Windows\Prefetch`. They are designed to speed up a launch of an application by caching the necessary data for frequently used programs. 
 
