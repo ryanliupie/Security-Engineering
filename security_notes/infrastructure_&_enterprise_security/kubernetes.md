@@ -6,7 +6,7 @@ It is a client-server architecture which contains many different components that
 
 ### Kubernetes Components  
 
-![alt text](image.png)
+<img src="../../images/kubernetes_components.png" width ="300px" alt="kubernetes components">
 
 - <b>Kubernetes Cluster:</b> This is simply the entire environment which is coordinated by the control plane.
 
