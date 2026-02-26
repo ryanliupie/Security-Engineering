@@ -52,3 +52,5 @@ To defend against a XSS attack, there is not one way to solve it, rather a combi
 
     <!--------------------> 
     <<img src="<%= photoUrl %>" alt="Profile Picture"> <!--Secure since "photourl" has quotes, but rmemember that we need additional security measures on top of this--> 
+
+    g
