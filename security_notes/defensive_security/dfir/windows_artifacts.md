@@ -56,8 +56,11 @@ On Windows, we can also navigate to `%SystemRoot%\System32\config\`. It could be
     - `SECURITY` → This stores local security policies, user rights assignments, and Access Control Lists. Attackers often target this hive file to dump credentials or to understand security configurations. 
     - `SOFTWARE` → This contains information regarding configuration settings and data for installed application, services, and different windows components that apply globally to the machine. 
     - `SYSTEM` → This contains critical boot configuration, driver and system settings. 
-    - `HARDWARE` → This is generated dynamically on system boot rather than Disk. Note that Disk is stuff saved as files which persists after shutdown. So even from a dead drive, you can grab SAM, SECURITY, SOFTWARE, SYSTEM hive files, but can't grab hardware. HARDWARE is created during boot and so to collect data of it, you need a live acquisition or it would have had to been exported beforehand. This is useful for <b>live</b> investigations.
+    - `HARDWARE` → This is generated dynamically on <b>system boot</b> rather than disk. Note that Disk is stuff saved as files which persists after shutdown. So even from a dead drive, you can grab SAM, SECURITY, SOFTWARE, SYSTEM hive files, but can't grab hardware. HARDWARE is created during boot and so to collect data of it, you need a live acquisition or it would have had to been exported beforehand. This is useful for <b>live</b> investigations.
         
         - It contains information Windows discovers while starting up such as detected devices, BIOS/UEFI, CPU identifiers, Resource mappings, etc... 
 
         - Simply put, it this is "at this moment, on this boot, this is the hardware Windows sees and how it is wired up". 
+
+    
+
