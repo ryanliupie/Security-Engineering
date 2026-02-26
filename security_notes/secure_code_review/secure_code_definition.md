@@ -1,4 +1,4 @@
-## What is Secure Code? 🌐
+## What is Secure Code?
 
  Secure coding is the practice of developing software with a strong emphasis on security. By writing secure code, developers can minimize vulnerabilities, reducing the risk of attackers exploiting a system or service. 
  
@@ -6,4 +6,3 @@
 
 
  This is why writing secure code is essential, especially when handling confidential and sensitive information. Implementing security best practices from the start helps protect systems, data, and users from potential breaches.
-<hr>
