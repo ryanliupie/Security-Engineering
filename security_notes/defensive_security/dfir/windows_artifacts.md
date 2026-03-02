@@ -62,5 +62,8 @@ On Windows, we can also navigate to `%SystemRoot%\System32\config\`. It could be
 
         - Simply put, it this is "at this moment, on this boot, this is the hardware Windows sees and how it is wired up". 
 
+- ### 3. HKEY_USERS
+
+
     
 
