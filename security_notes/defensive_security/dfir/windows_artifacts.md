@@ -67,6 +67,24 @@ On Windows, we can also navigate to `%SystemRoot%\System32\config\`. It could be
     This registry contains all the actively loaded user profiles on a computer. HKEY_CURRENT_USER is a subkey of HKEY_USERS. 
 
 
-- ### 
+- ### HKEY_CLASSES_ROOT (HKCR)
+
+    This registry stores information to make sure that the correct program opens when you open a file using File Explorer (old name: Windows Explorer). 
+
+    - It is a merged view of two registry locations: 
+
+        - `HKEY_LOCAL_MACHINE\Software\Classes` → default settings for all users
+        - `HKEY_CURRENT_USER\Software\Classes` → user-specific overrides
+    
+    - Windows will check both of these places, and if they disagree, <b>your personal settings</b> wins over the computer's general settings. So for example: 
+
+        - `HKLM\Software\Classes`says `.pdf` files open with <b>Adobe</b>
+        - `HKCU\Software\Classes` says `.pdf` files open with <b>Chrome</b>
+
+    - If both of these entries exist and you open a `.pdf`, <b>HCKU</b> wins. So this just means tha the current user overrides the systems default. Their priority takes over the system-wide default. 
+
+- ### HKEY CURRENT_CONFIG
+
+    This registry contains information about the hardware profile that is used by the local computer at system startup. 
     
 
