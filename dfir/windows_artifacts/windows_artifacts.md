@@ -16,7 +16,7 @@ It holds configuration information that Windows actively references to operate t
 
 A <b>Registry Hive</b> is a top-level folder that contain crucial configuration data, user profiles, and system settings. They form the backbone of the Windows Registry database. Everything under them are <b>Subkeys</b>, and under the Subkeys, there are <b>Values</b> that contain the actual data. There are 5 root registry hives that include: 
 
-<img src="../../../images/hives.png" width="250px" alt="windows_hives">
+<img src="../../images/hives.png" width="250px" alt="windows_hives">
 
 These can be found in the <b>Registry Editor</b> or the <b>Regedit</b> application in Windows. 
 
